@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #container{
+            display: flex;
+            align-items: center;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5%;
+        }
+        #form-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5%;
+        }
+        #form-3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5%;
+        }
+        input{
+            margin-bottom: 1%;
+        }
+        select{
+            margin-bottom: 1%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <form action="/queue" method="post" id="form">
+        <input type="text" name="name" id="name com" placeholder="Full Name">
+        <input type="email" name="email" id="email " placeholder="Email">
+        <input type="number" name="mobileNumber" id="mobileNumber com" placeholder="Mobile Number">
+        <input type="text" name="serviceType" id="service " placeholder="Service-Type">
+        <input type="submit" value="submit">
+    </form>
+    <form action="/queue-status" method="get" id="form-2">
+        <input type="email" name="email" id="email" placeholder="enter E-mail">
+        <input type="submit" value="submit">
+    </form>
+    <form action="/premium" method="post" id="form-3">
+        <input type="email" name="email" id="email" placeholder="enter E-mail">
+        <input type="number" name="waitingTimeReduction" id="waiting-red" min="0" step="5" placeholder="Reduction Time">
+        <input type="submit" value="submit">
+    </form>
+    </div>
+</body>
+</html>

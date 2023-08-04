@@ -1,0 +1,1 @@
+This is the main api for whole queue management system it is designed using only sequelize without sql queries.The testing with mocho and chai is also done and those files are in test folder. This folder also includes docker file.
